@@ -1,0 +1,59 @@
+{
+  "harfler": [
+    {
+      "id": 1,
+      "harf": "ا",
+      "isim": "Elif",
+      "sesDosyasi": "/assets/audio/harfler/elif.mp3",
+      "gorselDosyasi": "/assets/images/harfler/elif.png",
+      "nesne": "أرنب",
+      "nesneTurkce": "Tavşan",
+      "nesneGorseli": "/assets/images/nesneler/tavsan.png",
+      "nesneSesDosyasi": "/assets/audio/nesneler/tavsan.mp3"
+    },
+    {
+      "id": 2,
+      "harf": "ب",
+      "isim": "Be",
+      "sesDosyasi": "/assets/audio/harfler/be.mp3",
+      "gorselDosyasi": "/assets/images/harfler/be.png",
+      "nesne": "بطة",
+      "nesneTurkce": "Ördek",
+      "nesneGorseli": "/assets/images/nesneler/ordek.png",
+      "nesneSesDosyasi": "/assets/audio/nesneler/ordek.mp3"
+    },
+    {
+      "id": 3,
+      "harf": "ت",
+      "isim": "Te",
+      "sesDosyasi": "/assets/audio/harfler/te.mp3",
+      "gorselDosyasi": "/assets/images/harfler/te.png",
+      "nesne": "تفاحة",
+      "nesneTurkce": "Elma",
+      "nesneGorseli": "/assets/images/nesneler/elma.png",
+      "nesneSesDosyasi": "/assets/audio/nesneler/elma.mp3"
+    },
+    {
+      "id": 4,
+      "harf": "ث",
+      "isim": "Se",
+      "sesDosyasi": "/assets/audio/harfler/se.mp3",
+      "gorselDosyasi": "/assets/images/harfler/se.png",
+      "nesne": "ثعلب",
+      "nesneTurkce": "Tilki",
+      "nesneGorseli": "/assets/images/nesneler/tilki.png",
+      "nesneSesDosyasi": "/assets/audio/nesneler/tilki.mp3"
+    },
+    {
+      "id": 5,
+      "harf": "ج",
+      "isim": "Cim",
+      "sesDosyasi": "/assets/audio/harfler/cim.mp3",
+      "gorselDosyasi": "/assets/images/harfler/cim.png",
+      "nesne": "جمل",
+      "nesneTurkce": "Deve",
+      "nesneGorseli": "/assets/images/nesneler/deve.png",
+      "nesneSesDosyasi": "/assets/audio/nesneler/deve.mp3"
+    }
+  ]
+}

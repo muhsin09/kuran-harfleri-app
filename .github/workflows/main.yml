@@ -1,0 +1,44 @@
+# This workflow defines the CI/CD pipeline for the Kur'an Harfleri App.
+# It includes steps for building, testing, and preparing the application.
+
+# This workflow will run on pushes to the main branch and on pull requests targeting the main branch.
+on:
+  push:
+    branches: [ "main" ] # Trigger on pushes to the main branch
+  pull_request:
+    branches: [ "main" ] # Trigger on pull requests to the main branch
+
+# Allows you to run this workflow manually from the Actions tab on GitHub
+workflow_dispatch:
+
+# Defines the jobs that will be run as part of this workflow
+jobs:
+  # Defines a job named 'build-and-test'
+  build-and-test:
+    # Specifies the type of runner that the job will run on (Ubuntu latest version)
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the 'build-and-test' job
+    steps:
+      # Step 1: Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - name: Checkout code
+        uses: actions/checkout@v3 # Uses the official 'checkout' action
+
+      # Step 2: Sets up Node.js environment
+      - name: Set up Node.js
+        uses: actions/setup-node@v3 # Uses the official 'setup-node' action
+        with:
+          node-version: 18.x # Specifies Node.js version 18.x
+          cache: 'npm' # Enables caching for npm dependencies to speed up subsequent builds
+
+      # Step 3: Installs project dependencies
+      - name: Install dependencies
+        run: npm ci # Use 'npm ci' for deterministic and faster installs in CI environments
+
+      # Step 4: Runs the test suite
+      - name: Run tests
+        run: npm test # Executes the test script defined in package.json
+
+      # Step 5: Builds the application for production
+      - name: Build application
+        run: npm run build # Executes the build script defined in package.json
